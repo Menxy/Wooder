@@ -80,22 +80,21 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-.header__third_center {
-  border: 1px solid #fff;
+.wooder__left, .wooder__center {
+  border: 1px solid #000;
 }
 
 body {
+  overflow-x: hidden;
   font-family: Helvetica, Arial, sans-serif;
+  background-color: #fff;
 }
 
 .top {
   width: 100vw;
   height: 117vh;
   background-image: url("../src/wood_22.jpg");
-  background-repeat: no-repeat;
   background-size: 100% auto;
-  overflow: hidden;
-  color: #fff;
 }
 
 .header {
@@ -108,9 +107,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33.33%;
-          flex: 1 1 33.33%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
   height: 10vh;
 }
 
@@ -123,6 +122,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .header__burger__board {
@@ -138,21 +139,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #ffffff;
 }
 
 .header__third a {
-  color: #bea67c;
+  color: #ffffff;
 }
 
 .header__menus {
   opacity: 0.5;
   font-family: "ProximaNova";
-  font-size: 10.7px;
+  font-size: 10px;
   line-height: 19px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  color: #ffffff;
 }
 
 .header__third_left {
@@ -167,18 +168,29 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 49%;
-          flex: 0 0 49%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 49%;
+          flex: 1 1 49%;
+  max-width: 49%;
 }
 
 .header__center_img {
-  width: 32%;
-  margin-right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 57.5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 14%;
+}
+
+.header__center_img img {
+  width: 50%;
 }
 
 .header__center__menu {
-  width: 42%;
+  width: 42.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,11 +199,15 @@ body {
           justify-content: space-between;
 }
 
+.header__center__menu a:nth-child(even) {
+  margin-left: 5%;
+}
+
 .header__third_right {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 6%;
+  max-width: 5.7%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 5%;
           flex: 1 1 5%;
@@ -209,9 +225,10 @@ body {
 
 .header__right__triangle {
   width: 0;
-  border-top: 4px solid #bea67c;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  margin-left: 10%;
+  border-top: 2px solid #bea67c;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
 }
 
 .header__right__menu {
@@ -221,4 +238,77 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 5%;
+}
+
+.wooder__container {
+  margin: 0 auto;
+  height: 85vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+}
+
+.wooder__center {
+  width: 50%;
+  padding-left: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.wooder__center__head {
+  font-family: 'ProximaNova';
+  font-size: 65px;
+  line-height: 65px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.21em;
+  color: #bea67c;
+}
+
+.wooder__center__learn a {
+  font-family: 'ProximaNova';
+  font-size: 9px;
+  line-height: 49px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #ffffff;
+  border: 2px solid #fff;
+  padding: 3% 16% 3% 13.5%;
+  background: url(../src/arrow_right.png) 78% 50% no-repeat;
+}
+
+.wooder__right {
+  opacity: 0.2;
+  font-family: "ProximaNova";
+  font-size: 9.7px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: relative;
+  color: #a9946e;
+}
+
+.wooder__right__rotate {
+  white-space: nowrap;
+  white-space: pre;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: 45%;
+  right: 0;
+  padding-right: 12px;
 }
