@@ -8,6 +8,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'ProximaNovaB';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: local('☺'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 //Шрифты
 //Шаблоны
 %black {
@@ -27,8 +34,8 @@ body {
 .top {
   width: 100vw;
   height: 117vh;
-  background-image: url('../src/wood_22.jpg');
-  background-size: 100% auto;
+  background: url('../src/wood_22.jpg') 0 0/100% auto no-repeat;
+  background-attachment: scroll;
 }
 .header {
   display: flex;
@@ -136,7 +143,7 @@ body {
 .slider-container {
 }
 .wooder__center {
-  @extend %black;
+  @extend %red;
   width: 50%;
   padding-left: 6%;
   display: flex;
@@ -144,12 +151,11 @@ body {
   justify-content: flex-end;
 }
 .wooder__center__head {
-  font-family: 'ProximaNova';
+  font-family: 'ProximaNovaB';
   font-size: 65px;
   line-height: 65px;
-  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.21em;
+  letter-spacing: 0.2em;
   color: #bea67c;
 }
 .wooder__center__learn {
@@ -162,18 +168,16 @@ body {
     letter-spacing: 0.25em;
     color: #ffffff;
     border: 2px solid #fff;
-    padding: 3% 16% 3% 13.5%;
-    background: url(../src/arrow_right.png) 78% 50% no-repeat;
+    padding: 3% 17% 3% 13.5%;
+    background: url(../src/arrow_right.png) 76.5% 50% no-repeat;
   }
 }
 .wooder__center__bottom {
+  img {
+    width: 110%;
+  }
 }
-.wooder__center__bottom__mouse {
-}
-.wooder__center__bottom__arrow {
-}
-.wooder__center__bottom__scroll {
-}
+
 .wooder__right {
   opacity: 0.2;
   font-family: "ProximaNova";
