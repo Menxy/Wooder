@@ -176,7 +176,13 @@ body {
 .slick-list {
   overflow: hidden;
 }
-
+/* Точки (булиты) */
+.slider .slick-dots{}
+.slider .slick-dots li{}
+/* Активная точка */
+.slider .slick-dots li.slick-active{}
+/* Элемент точки */
+.slider .slick-dots li button{}
 
 
 

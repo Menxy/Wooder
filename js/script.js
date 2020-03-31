@@ -1,3 +1,5 @@
 $(document).ready(function(){
-    $('.wooder__left').slick();
+    $('.wooder__left').slick({
+        dots: true,
+    });
 })
