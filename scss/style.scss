@@ -137,15 +137,53 @@ body {
   justify-content: space-between;
   max-width: 900px;
 }
+// Slick-slider
 .wooder__left {
-  @extend %black;
+  position: relative; //Для стрелок
+  width: 27%;
+  min-width: 0;  // Нужно если флекс
+  .slick-arrow {
+    position: absolute; // Выравниваем стрелки
+    top: 15%;
+    z-index: 10; //Стрелки поверх слайдеров
+    font-size: 0; //  Убрать надписи на кнопках 
+  }
+  .slick-prev {
+    height: 30px; // Стрелки
+    width: 30px;  // Стрелки
+    background: url(../src/slick_left.png) 0 0/cover no-repeat; // Стрелки
+  }
+  .slick-next {
+    right: 0;
+    height: 30px;  // Стрелки
+    width: 30px;  // Стрелки
+    background: url(../src/slick_right.png) 0 0/cover no-repeat; // Стрелки
+  }
 }
 .slider-container {
+  min-width: 0;  // Нужно если флекс
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 70%;
+  }
 }
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+
+
+
+
+// /Slick-slider
 .wooder__center {
-  @extend %red;
   width: 50%;
-  padding-left: 6%;
+  padding-left: 7%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -157,6 +195,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #bea67c;
+  padding-bottom: 6%;
 }
 .wooder__center__learn {
   a {
@@ -168,17 +207,17 @@ body {
     letter-spacing: 0.25em;
     color: #ffffff;
     border: 2px solid #fff;
-    padding: 3% 17% 3% 13.5%;
-    background: url(../src/arrow_right.png) 76.5% 50% no-repeat;
+    padding: 3% 17% 3% 15%;
+    background: url(../src/arrow_right.png) 79% 50% no-repeat;
   }
+  padding-bottom: 9%;
 }
 .wooder__center__bottom {
-  img {
-    width: 110%;
-  }
+  padding-bottom: 2%;
 }
 
 .wooder__right {
+  width: 30%;
   opacity: 0.2;
   font-family: "ProximaNova";
   font-size: 9.7px;
