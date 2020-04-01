@@ -95,11 +95,11 @@ body {
 }
 
 .top {
+  position: relative;
   width: 100vw;
-  height: 117vh;
-  max-height: 768px;
-  background: url("../src/wood_22.jpg") 0 0/100% auto no-repeat;
-  background-attachment: scroll;
+  height: 675px;
+  min-height: 100vh;
+  background: url("../src/wood_22.jpg") center/cover no-repeat;
 }
 
 .header {
@@ -373,7 +373,7 @@ body {
 }
 
 .wooder__center__learn {
-  padding: 0 0 10.5% 1%;
+  padding: 0 0 10% 1%;
   width: 115%;
 }
 
@@ -386,12 +386,12 @@ body {
   letter-spacing: 0.25em;
   color: #ffffff;
   border: 2px solid #fff;
-  padding: 3% 17% 3% 15%;
-  background: url(../src/arrow_right.png) 79% 50% no-repeat;
+  padding: 3% 17% 3% 14.5%;
+  background: url(../src/arrow_right.png) 78% 50% no-repeat;
 }
 
 .wooder__center__bottom {
-  padding-bottom: 2%;
+  padding: 0 0 2% 0;
 }
 
 .wooder__right {
@@ -415,4 +415,120 @@ body {
   top: 45%;
   right: 0;
   padding-right: 12px;
+}
+
+.wooder__share {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+}
+
+.wooder__f {
+  position: absolute;
+  left: 18%;
+  bottom: -22.5%;
+  opacity: 0.07;
+  font-family: "ProximaNovaB";
+  font-size: 260px;
+  line-height: 312px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #bea67c;
+}
+
+.wooder__board {
+  position: absolute;
+  right: 18.8%;
+  bottom: -2%;
+  width: 2px;
+  height: 33px;
+  background-color: #bea67c;
+}
+
+.furniture__container {
+  border: 1px solid #78fd44;
+  width: 65%;
+  margin: 0 auto;
+  height: 400px;
+  min-height: 65vh;
+  position: relative;
+  padding: 4.5% 0 0 0;
+}
+
+.furniture__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+}
+
+.furniture__half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 49.5%;
+  border: 1px solid #f33c3c;
+}
+
+.furniture__half:first-child {
+  padding: 8.5% 3% 0 3%;
+}
+
+.furniture__half:last-child {
+  width: 50.5%;
+  margin: -1% 0 0 -1.5%;
+  background: url(../src/furniture.jpg) 0 0/105% auto no-repeat;
+}
+
+.furniture__row_top {
+  border: 1px solid #000;
+  font-family: "ProximaNovaB";
+  font-size: 33px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #010101;
+  padding-left: 33.5%;
+  background: url(../src/board__furniture.png) 0 45%/29% auto no-repeat;
+}
+
+.furniture__row_cent {
+  border: 1px solid #da2525;
+  font-family: "ProximaNova";
+  font-size: 10.1px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding: 1.5% 0;
+  padding-left: 33.5%;
+  background: url(../src/m_board__furniture.png) 22% 20%/9% auto no-repeat;
+  color: #464646;
+  word-wrap: break-word;
+}
+
+.furniture__row_bot {
+  border: 1px solid #000;
+  margin-left: 33.5%;
+}
+
+.furniture__row_bot a {
+  display: inline-block;
+  color: #000;
+  font-family: 'ProximaNovaB';
+  font-size: 10px;
+  width: 49%;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  padding: 3% 3% 3% 1%;
+  background: url(../src/arrow__furniture.png) 4px 11px/90% 50% no-repeat;
 }
