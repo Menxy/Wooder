@@ -29,6 +29,7 @@ body {
 .top {
   width: 100vw;
   height: 117vh;
+  max-height: 768px;
   background: url('../src/wood_22.jpg') 0 0/100% auto no-repeat;
   background-attachment: scroll;
 }
@@ -125,8 +126,9 @@ body {
   padding-right: 5%;
 }
 .wooder__container {
+  //border: 1px solid rgb(192, 28, 28);
   margin: 0 auto;
-  height: 85vh;
+  height: 72.5%;
   display: flex;
   justify-content: space-between;
   max-width: 900px;
@@ -203,6 +205,11 @@ body {
 
 
 // /Slick-slider
+
+// Второй слайдер
+
+
+// /Второй слайдер
 .wooder__center {
   width: 50%;
   padding-left: 13.7%;

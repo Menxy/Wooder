@@ -97,6 +97,7 @@ body {
 .top {
   width: 100vw;
   height: 117vh;
+  max-height: 768px;
   background: url("../src/wood_22.jpg") 0 0/100% auto no-repeat;
   background-attachment: scroll;
 }
@@ -247,7 +248,7 @@ body {
 
 .wooder__container {
   margin: 0 auto;
-  height: 85vh;
+  height: 72.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
