@@ -7,9 +7,9 @@ $(document).ready(function(){
         slidesToScroll: 1, //Количество слайдов перемотки
         speed: 1000, // 300 умолчание в ms
         easing: "ease", //как в анимации css
-        infinite: true, // бесконечная перемотка (false)
+        infinite: false, // бесконечная перемотка (false)
         initialSlide: 2, //стартовый слайд
-        autoplay: true,  
+        autoplay: false,  
         autoplaySpeed: 2000, //ms, к autoplay
         pauseOnFocus: true, // к autoplay
         pauseOnHover: true, // к autoplay
@@ -21,6 +21,10 @@ $(document).ready(function(){
         waitForAnimate: true, // Быстро кликаешь - ждёт анимацию
         centerMode: false, //Активный слайд по центру. Показывает 3 слайда. Получает класс .slick-center
         variableWidth: false, // Сбрасывает width.
-        
+        rows: 1, //Можно больше. Ряды слайдов.
+        slidesPerRow: 1,
+        vertical: true, //Вертикальный слайдер
+
+
     });
 })

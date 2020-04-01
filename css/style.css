@@ -260,7 +260,7 @@ body {
 .wooder__left {
   position: relative;
   width: 16%;
-  padding-top: 14%;
+  padding-top: 13%;
   min-width: 0;
 }
 
@@ -282,7 +282,6 @@ body {
   right: 0;
   height: 30px;
   width: 30px;
-  background: url(../src/slick_right.png) 0 0/cover no-repeat;
 }
 
 .slider-container {
@@ -299,10 +298,12 @@ body {
           align-items: center;
 }
 
+.slider-container img {
+  padding: 5% 0;
+}
+
 .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .slick-list {
