@@ -17,15 +17,10 @@
 }
 //Шрифты
 //Шаблоны
-%black {
-  border: 1px solid #000;
-}
 %white {
   border: 1px solid #fff;
 }
-%red {
-  border: 1px solid rgb(247, 45, 45);
-}
+
 body {
   overflow-x: hidden;
   font-family: Helvetica, Arial, sans-serif;
@@ -129,7 +124,6 @@ body {
   align-items: center;
   padding-right: 5%;
 }
-//@extend %red;
 .wooder__container {
   margin: 0 auto;
   height: 85vh;
@@ -140,9 +134,11 @@ body {
 // Slick-slider
 .wooder__left {
   position: relative; //Для стрелок
-  width: 27%;
+  width: 16%;
+  padding-top: 14%;
   min-width: 0;  // Нужно если флекс
   .slick-arrow {
+    display: none;
     position: absolute; // Выравниваем стрелки
     top: 15%;
     z-index: 10; //Стрелки поверх слайдеров
@@ -161,14 +157,12 @@ body {
   }
 }
 .slider-container {
+  //text-align: center; // Для выравнивания слайда
   min-width: 0;  // Нужно если флекс
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  img {
-    height: 70%;
-  }
 }
 .slick-track {
   display: flex;
@@ -177,19 +171,38 @@ body {
   overflow: hidden;
 }
 /* Точки (булиты) */
-.slider .slick-dots{}
-.slider .slick-dots li{}
+.wooder__left .slick-dots{ // Это ul с точками li
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25% 31%;
+}
+.wooder__left .slick-dots li{ // Это сами точки
+  list-style: none;
+  margin: 8px 0px;
+}
+
 /* Активная точка */
-.slider .slick-dots li.slick-active{}
+.wooder__left .slick-dots li.slick-active button{
+  opacity: 1;
+  background-color: #bea67c;
+}
 /* Элемент точки */
-.slider .slick-dots li button{}
+.wooder__left  .slick-dots li button{
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  opacity: 0.2;
+  background-color: #bea67c;
+  border-radius: 50%;
+}
 
 
 
 // /Slick-slider
 .wooder__center {
   width: 50%;
-  padding-left: 7%;
+  padding-left: 13.7%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -201,7 +214,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #bea67c;
-  padding-bottom: 6%;
+  padding-bottom: 7%;
 }
 .wooder__center__learn {
   a {
@@ -216,7 +229,8 @@ body {
     padding: 3% 17% 3% 15%;
     background: url(../src/arrow_right.png) 79% 50% no-repeat;
   }
-  padding-bottom: 9%;
+  padding: 0 0 10.5% 1%;
+  width: 115%;
 }
 .wooder__center__bottom {
   padding-bottom: 2%;

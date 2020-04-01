@@ -259,11 +259,13 @@ body {
 
 .wooder__left {
   position: relative;
-  width: 27%;
+  width: 16%;
+  padding-top: 14%;
   min-width: 0;
 }
 
 .wooder__left .slick-arrow {
+  display: none;
   position: absolute;
   top: 15%;
   z-index: 10;
@@ -297,10 +299,6 @@ body {
           align-items: center;
 }
 
-.slider-container img {
-  height: 70%;
-}
-
 .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,11 +310,44 @@ body {
 }
 
 /* Точки (булиты) */
+.wooder__left .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25% 31%;
+}
+
+.wooder__left .slick-dots li {
+  list-style: none;
+  margin: 8px 0px;
+}
+
 /* Активная точка */
+.wooder__left .slick-dots li.slick-active button {
+  opacity: 1;
+  background-color: #bea67c;
+}
+
 /* Элемент точки */
+.wooder__left .slick-dots li button {
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  opacity: 0.2;
+  background-color: #bea67c;
+  border-radius: 50%;
+}
+
 .wooder__center {
   width: 50%;
-  padding-left: 7%;
+  padding-left: 13.7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,11 +367,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #bea67c;
-  padding-bottom: 6%;
+  padding-bottom: 7%;
 }
 
 .wooder__center__learn {
-  padding-bottom: 9%;
+  padding: 0 0 10.5% 1%;
+  width: 115%;
 }
 
 .wooder__center__learn a {
