@@ -828,3 +828,76 @@ body {
   letter-spacing: 0.2em;
   color: #bea67c;
 }
+
+.we__common {
+  background: url("../src/we_down.jpg") 0 0/101% auto no-repeat;
+  height: 652px;
+  margin-top: 8%;
+  padding: 4.6% 8.2% 0 9.5%;
+}
+
+.we__container {
+  border: 1px solid #50493e;
+  margin: 0 auto;
+}
+
+.we__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 13% 0 11.5% 13%;
+}
+
+.we__header {
+  font-family: 'ProximaNovaB';
+  font-size: 30.4px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #bea67c;
+  padding-left: 13.5%;
+  background: url(../src/white_board.png) 1% 23%/22% 2px no-repeat;
+  max-width: 455px;
+}
+
+.we__text {
+  font-family: ProximaNova;
+  font-size: 9.7px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  padding: 2.1% 0 0 13.8%;
+  max-width: 384px;
+  background: url(../src/m_board__furniture.png) 20.7% 33%/7.8% 4px no-repeat;
+}
+
+.we__button {
+  width: 22.7%;
+  border: 2px solid #fff;
+  margin: 3% 0 0 13.8%;
+}
+
+.we__button a {
+  display: inline-block;
+  width: 100%;
+  font-family: 'ProximaNova';
+  font-size: 9px;
+  line-height: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #ffffff;
+  padding: 0 0 0 35%;
+  background: url(../src/player_small.png) 24% 46%/8.5% auto no-repeat;
+}
