@@ -830,6 +830,7 @@ body {
 }
 
 .we__common {
+  position: relative;
   background: url("../src/we_down.jpg") 0 0/101% auto no-repeat;
   height: 652px;
   margin-top: 8%;
@@ -900,4 +901,18 @@ body {
   color: #ffffff;
   padding: 0 0 0 35%;
   background: url(../src/player_small.png) 24% 46%/8.5% auto no-repeat;
+}
+
+.we__a {
+  position: absolute;
+  right: 11.6%;
+  bottom: -17%;
+  opacity: 0.07;
+  font-family: 'ProximaNovaB';
+  font-size: 250px;
+  line-height: 312px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #bea67c;
 }
