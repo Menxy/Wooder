@@ -721,8 +721,9 @@ body {
 }
 
 .quality__container {
+  border: 1px solid #cf1c1c;
   position: relative;
-  max-width: 700px;
+  max-width: 635px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,17 +745,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: #000000;
-  padding: 9.4% 0 11px 1.2%;
+  padding: 10.1% 0 11px 1.7%;
 }
 
 .quality__board {
-  position: absolute;
   width: 17px;
   height: 2px;
   background-color: #bea67c;
+  margin-right: 8.5%;
 }
 
 .quality__board_big {
+  position: absolute;
   top: 132px;
   left: 48.9%;
   width: 28px;
@@ -777,8 +779,40 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border: 1px solid #5728d8;
+  margin: 8.6% 0 0 4.2%;
+}
+
+.quality__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quality__column__img {
+  padding-bottom: 15%;
 }
 
 .quality__column__img img {
   width: 90%;
+}
+
+.quality__column__text {
+  font-family: 'ProximaNova';
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin: 4% 8% 0 0;
 }
