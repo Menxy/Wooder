@@ -509,9 +509,8 @@ body {
   color: #d0d0d0;
 }
 .quality__container {
-  border: 1px solid rgb(207, 28, 28);
   position: relative;
-  max-width: 635px;
+  max-width: 658px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -525,7 +524,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: #000000;
-  padding: 10.1% 0 11px 1.7%;
+  padding: 9.7% 0 11px 1.7%;
 }
 .quality__board {
   width: 17px;
@@ -555,8 +554,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid rgb(87, 40, 216);
-  margin: 8.6% 0 0 4.2%;
+  margin: 6.9% 0 0 4.2%;
 }
 .quality__column {
   display: flex;
@@ -567,7 +565,7 @@ body {
   img {
     width: 90%;
   }
-  padding-bottom: 15%;
+  padding-bottom: 8%;
 }
 .quality__column__text {
   font-family: 'ProximaNova';
@@ -576,4 +574,17 @@ body {
   font-weight: 400;
   letter-spacing: 0.02em;
   margin: 4% 8% 0 0;
+}
+.quality__v {
+  position: absolute;
+  right: -22.5%;
+  bottom: -65%;
+  opacity: 0.07;
+  font-family: "ProximaNovaB";
+  font-size: 260px;
+  line-height: 312px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #bea67c;
 }
