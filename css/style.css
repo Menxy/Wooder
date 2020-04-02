@@ -1039,7 +1039,7 @@ body {
 }
 
 .footer {
-  background: url(../src/wood_footer.jpg) 0 0/100% auto no-repeat;
+  background: url(../src/wood_footer.jpg) 0 0/100% 101% no-repeat;
   height: 49px;
   margin-top: 4.7%;
 }
