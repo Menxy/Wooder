@@ -284,7 +284,7 @@ body {
   background-color: #bea67c;
 }
 .furniture__container {
-  border: 1px solid rgb(120, 253, 68);
+  //border: 1px solid rgb(120, 253, 68);
   width: 65%;
   margin: 0 auto;
   height: 400px;
@@ -302,7 +302,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   width: 49.5%;
-  border: 1px solid rgb(243, 60, 60);
+  //border: 1px solid rgb(243, 60, 60);
   &:first-child {
     padding: 8.5% 3% 0 3%;
   }
@@ -313,7 +313,6 @@ body {
   }
 }
 .furniture__row_top {
-  border: 1px solid #000;
   font-family: "ProximaNovaB";
   font-size: 33px;
   line-height: 40px;
@@ -325,7 +324,7 @@ body {
   background: url(../src/board__furniture.png) 0 45%/29% auto no-repeat;
 }
 .furniture__row_cent {
-  border: 1px solid rgb(218, 37, 37);
+  //border: 1px solid rgb(218, 37, 37);
   font-family: "ProximaNova";
   font-size: 10.1px;
   line-height: 17px;
@@ -338,7 +337,6 @@ body {
   word-wrap: break-word;
 }
 .furniture__row_bot {
-  border: 1px solid #000;
   margin-left: 33.5%;
   a {
     display: inline-block;

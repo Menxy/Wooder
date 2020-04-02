@@ -447,7 +447,6 @@ body {
 }
 
 .furniture__container {
-  border: 1px solid #78fd44;
   width: 65%;
   margin: 0 auto;
   height: 400px;
@@ -475,7 +474,6 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 49.5%;
-  border: 1px solid #f33c3c;
 }
 
 .furniture__half:first-child {
@@ -489,7 +487,6 @@ body {
 }
 
 .furniture__row_top {
-  border: 1px solid #000;
   font-family: "ProximaNovaB";
   font-size: 33px;
   line-height: 40px;
@@ -502,7 +499,6 @@ body {
 }
 
 .furniture__row_cent {
-  border: 1px solid #da2525;
   font-family: "ProximaNova";
   font-size: 10.1px;
   line-height: 17px;
@@ -516,7 +512,6 @@ body {
 }
 
 .furniture__row_bot {
-  border: 1px solid #000;
   margin-left: 33.5%;
 }
 
