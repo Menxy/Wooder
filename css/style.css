@@ -391,7 +391,11 @@ body {
 }
 
 .wooder__center__bottom {
-  padding: 0 0 2% 0;
+  padding: 1.5% 0 3.5% 1%;
+}
+
+.wooder__center__bottom a img {
+  width: 4.3%;
 }
 
 .wooder__right {
@@ -440,7 +444,7 @@ body {
 .wooder__board {
   position: absolute;
   right: 18.8%;
-  bottom: -2%;
+  bottom: -2.2%;
   width: 2px;
   height: 33px;
   background-color: #bea67c;
