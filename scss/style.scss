@@ -235,6 +235,7 @@ body {
 }
 .wooder__center__bottom {
   padding: 0 0 2% 0;
+  
 }
 
 .wooder__right {
@@ -284,10 +285,10 @@ body {
   background-color: #bea67c;
 }
 .furniture__container {
-  //border: 1px solid rgb(120, 253, 68);
+  border: 1px solid transparent;
   width: 65%;
   margin: 0 auto;
-  height: 400px;
+  height: 410px;
   min-height: 65vh;
   position: relative;
   padding: 3.9% 0 0 0;
@@ -350,7 +351,7 @@ body {
 .furniture__number {
   position: absolute;
   left: 4.4%;
-  bottom: 14.7%;
+  bottom: 16.5%;
   font-family: 'ProximaNovaB';
   font-size: 23.5px;
   line-height: 71px;
@@ -365,8 +366,141 @@ body {
 .furniture__board {
   position: absolute;
   left: 6%;
-  bottom: -4%;
+  bottom: -1.2%;
   width: 2px;
   height: 33px;
   background-color: #bea67c;
+}
+.furniture__big {
+  position: absolute;
+  right: -53.4%;
+  top: 16%;
+  opacity: 0.2;
+  font-family: 'ProximaNovaB';
+  font-size: 110px;
+  line-height: 251px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #d0d0d0;
+}
+.decor__container {
+  width: 64.5%;
+  margin: 0 auto;
+  height: 400px;
+  min-height: 65vh;
+  position: relative;
+  padding: 6.1% 0 0 0;
+}
+.decor__flex {
+  display: flex;
+  height: 300px;
+}
+.decor__half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  &:first-child {
+    flex: 0 0 51.5%;
+    margin-left: 1%;
+    background: url(../src/furniture_2.png) 0 0/101% auto no-repeat;
+  }
+  &:last-child {
+    padding: 0 0 2.1% 0;
+  }
+}
+.decor__row_top {
+  border: 1px solid transparent;
+  font-family: "ProximaNovaB";
+  font-size: 33px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #010101;
+  padding-right: 33.5%;
+  background: url(../src/board__furniture.png) 93.5% 45%/40.4% 5% no-repeat;
+}
+.decor__row_cent {
+  display: inline-block;
+  font-family: "ProximaNova";
+  text-align: right;
+  max-height: 55px;
+  overflow: hidden;
+  font-size: 10.1px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding: 1.3% 33.5% 0 17%;
+  background: url(../src/m_board__furniture.png) 77% 23%/8% auto no-repeat;
+  color: #464646;
+}
+.decor__row_bot {
+  border: 1px solid transparent;
+  margin: 2% 32.5% 0 0;
+  min-width: 30%;
+  a {
+    border: 1px solid transparent;
+    display: inline-block;
+    color: #000;
+    font-family: 'ProximaNovaB';
+    font-size: 10px;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    padding: 4% 3% 3% 1%;
+    background: url(../src/arrow__furniture.png) 2px 6px/90% 60% no-repeat;
+  }
+}
+.decor__number {
+  position: absolute;
+  right: 1.8%;
+  bottom: 7.5%;
+  font-family: 'ProximaNovaB';
+  font-size: 23.5px;
+  line-height: 71px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #000000;
+  span {
+    color: #bea67c;
+  }
+}
+.decor__d {
+  position: absolute;
+  right: -11.5%;
+  top: -30.4%;
+  opacity: 0.07;
+  font-family: "ProximaNovaB";
+  font-size: 260px;
+  line-height: 312px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #bea67c;
+}
+.decor__board {
+  position: absolute;
+  right: 4.8%;
+  bottom: -3.9%;
+  width: 3px;
+  height: 33px;
+  background-color: #bea67c;
+}
+.decor__big {
+  position: absolute;
+  left: -27.4%;
+  top: 23%;
+  opacity: 0.2;
+  font-family: 'ProximaNovaB';
+  font-size: 110px;
+  line-height: 251px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #d0d0d0;
 }
