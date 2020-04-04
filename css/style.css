@@ -102,6 +102,12 @@ body {
   background: url("../src/wood_22.jpg") center/cover no-repeat;
 }
 
+@media (min-width: 1220px) {
+  .top {
+    height: 780px;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,7 +669,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.13em;
   padding: 4% 3% 3% 1%;
-  background: url(../src/arrow__furniture.png) 2px 6px/90% 60% no-repeat;
+  background: url(../src/arrow__furniture.png) 2px 9px/90% 60% no-repeat;
 }
 
 .decor__number {
