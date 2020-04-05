@@ -30,11 +30,8 @@ body {
   position: relative;
   width: 100vw;
   height: 675px;
-  min-height: 100vh;
+  //min-height: 100vh;
   background: url('../src/wood_22.jpg') center/cover no-repeat;
-  @media (min-width: 1220px) {
-    height: 780px;
-  }
 }
 .header {
   display: flex;
@@ -70,7 +67,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  
+}
+.header__menus_left {
+  @media (max-width: 1220px) {
+    padding-left: 15px;
+  }
 }
 .header__third_left {
   margin-left: 1.2%;
@@ -84,11 +85,18 @@ body {
 }
 .header__center_img {
   display: flex;
+  flex: 1 0 auto;
   width: 57.5%;
-  justify-content: center;
-  padding-left: 14%;
+  border: 1px solid transparent;
+  justify-content: flex-end;
+  align-items: flex-start;
   img {
-    width: 50%;
+    max-width: 39.2%;
+    margin: 0 18.3% 1.4% 0;
+    @media (max-width: 1220px) {
+      height: 15px;
+      max-width: none;
+    }
   }
 }
 .header__center__menu {
@@ -134,6 +142,12 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 900px;
+  @media (max-width: 1150px) {
+    justify-content: center;
+  }
+  @media (max-width: 990px) {
+    justify-content: center;
+  }
 }
 // Slick-slider
 .wooder__left {
@@ -789,10 +803,10 @@ body {
   white-space: nowrap;
   margin-left: 2%;
 }
-.header__center_img {
-  margin: -0.6% 0 0 -3.9%;
+.footer__center_img {
+  margin: 0 0 0 14.5%;
   img {
-    width: 34%;
+    max-width: 75%;
   }
 }
 .footer__right {
